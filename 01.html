@@ -11,6 +11,16 @@
 
 <div id="app">
 </div>
-
+<script type="text/babel">
+    const Movie = ({name, year, img}) => {
+        return (
+            <div className="movie">
+                <h1>{name}</h1>
+                <strong>Year: {year}</strong>
+                <img src={img} alt={name}/>
+            </div>
+        )
+    }
+    </script>
 </body>
 </html>
