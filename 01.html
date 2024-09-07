@@ -21,6 +21,19 @@
             </div>
         )
     }
+    const poster = [
+        {name: 'House of the Dragon', year: 2022, img: 'https://media.2x2tv.ru/content/images/2022/10/3563636-2.jpg' },
+        {name: 'Lord of the Rings', year: 2001, img: 'https://static3.coolconnections.ru/images/13547/standard/hd/fedbb070a7e145df5755b8d8557a223f7c5daa40.jpg?1618902422' },
+        {name: 'Inside Out 2', year: 2024, img: 'https://newcdn.igromania.ru/articles/pics/tmp/images/2024/9/2/564eecfb-9b7a-4982-8b8d-c5bfdf6159f0.webp' },
+    ]
+
+    const content = poster.map ((movie, index) => {
+        return (
+            <Movie key = {index} name= {movie.name} year = {movie.year} img = {movie.img}/>
+        )
+    })
+
+    ReactDOM.render(content, document.getElementById('app'));
     </script>
 </body>
 </html>
