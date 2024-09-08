@@ -143,5 +143,22 @@
       );
     }
   }
+
+  class App extends React.Component {
+    render() {
+      return (
+              <div>
+                <Header/>
+                <div className="container">
+                  <Sidebar/>
+                  <Content/>
+                </div>
+                <Footer/>
+              </div>
+      );
+    }
+  }
+
+  ReactDOM.render(<App/>, document.getElementById('app'));
 </script>
 </html>
